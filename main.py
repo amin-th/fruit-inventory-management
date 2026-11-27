@@ -30,7 +30,7 @@ app.include_router(fruit_controller.router)
 
 # Frontend: opening http://127.0.0.1:8000 shows frontend/index.html
 # (change to "frontend-bootstrap-advanced" to use the advanced UI)
-FRONTEND_FOLDER = Path(__file__).parent / "frontend-bootstrap-advanced"
+FRONTEND_FOLDER = Path(__file__).parent / "frontend"
 app.mount("/", StaticFiles(directory=FRONTEND_FOLDER, html=True), name="frontend")
 
 
